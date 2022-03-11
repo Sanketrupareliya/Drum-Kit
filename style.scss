@@ -1,0 +1,44 @@
+@mixin flx{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-self: center;
+    height: 800px;
+    justify-content: space-around;
+}
+
+
+body{
+    background-image: url('img/musicc.jpg');
+    background-size: auto;
+}
+
+.butto{
+    @include flx;
+}
+
+.In{
+    transition: all 0.2s;
+    background-color:rgba(0, 0, 0, 0.6);
+    padding-bottom: 2%;
+    height: 70px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+    align-self: center;
+    border: 2.5px solid;
+    border-color: black;
+    color: aliceblue;
+}
+span{
+    padding-top: auto;
+}
+
+.playing{
+    transform: scale(1.15);
+    border: solid;
+    border-color: aquamarine;
+    box-shadow: 0 0 10px aquamarine;
+}
